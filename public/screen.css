@@ -17,9 +17,31 @@ main {
   display: flex;
   justify-content: center;
 }
+
+table {
+  margin-top: 3em;
+}
+
 td {
   margin: 0;
   border: 3px solid black;
   height: 100px;
   width: 100px;
 }
+
+tr.top td {
+  border-top: 0;
+}
+
+tr.bottom td {
+  border-bottom: 0;
+}
+
+td.left {
+  border-left: 0;
+}
+
+td.right {
+  border-right: 0;
+}
+
