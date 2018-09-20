@@ -7,3 +7,19 @@ body {
   min-height: 100%;
   font: 16px / 1 sans-serif;
 }
+
+header {
+  padding: 2rem;
+  font-size: 3em;
+  text-align: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+td {
+  margin: 0;
+  border: 3px solid black;
+  height: 100px;
+  width: 100px;
+}
