@@ -1,48 +1,57 @@
 html {
   height: 100%;
-}
-
-body {
+ }
+ 
+ body {
   margin: 0;
   min-height: 100%;
   font: 16px / 1 sans-serif;
-}
-
-header {
+  background-color: #293132;
+ }
+ 
+ header {
   padding: 2rem;
   font-size: 3em;
   text-align: center;
-}
-main {
+  color: #D7DAE5;
+ }
+ main {
   display: flex;
   justify-content: center;
-}
-
-table {
-  margin-top: 3em;
-}
-
-td {
+ }
+ 
+ table {
+  margin-top: 5em;
+  background-color: #293132;
+ 
+ }
+ 
+ td {
   margin: 0;
-  border: 3px solid black;
+  border: 3px solid#D7DAE5 ;
   height: 100px;
   width: 100px;
-}
-
-tr.top td {
+  text-align: center;
+  font-size: 4rem;
+  color: #31BDE0;
+ }
+ 
+ tr.top td {
   border-top: 0;
-}
-
-tr.bottom td {
+ }
+ 
+ tr.bottom td {
   border-bottom: 0;
-}
-
-#a, #d, #g {
+ }
+ 
+ #a, #d, #g {
   border-left: 0;
-}
-
-#c, #f, #j {
+ }
+ 
+ #c, #f, #j {
   border-right: 0;
-}
-
-
+ }
+ 
+ .button{
+ 
+ }
