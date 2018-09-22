@@ -26,7 +26,7 @@ function startGame() {
 }
 
 function turnClick(square) {
-  turn(square.target.id, player1)
+  turn(square.target.id, playerOne)
 }
 
 function turn(squareId, player) {
@@ -51,7 +51,7 @@ function checkWin(board, player) {
 function gameOver(gameWon) {
   for (let index of winCombos[gameWon.index]) {
     document.getElementById(index).style.backgroundColor =
-      gameWon.player == player1 ? "blue" : "red"
+      gameWon.player == playerOne ? "blue" : "red"
   }
   for (let i = 0; i < cells.length; i++) {
     cells[i].removeEventListener("click", turnClick, false)
