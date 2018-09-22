@@ -37,11 +37,13 @@ tr.bottom td {
   border-bottom: 0;
 }
 
-td.left {
+#a, #d, #g {
   border-left: 0;
 }
 
-td.right {
+#c, #f, #j {
   border-right: 0;
 }
 
+
+#lolol
