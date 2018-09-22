@@ -2,6 +2,7 @@ let clickCount = 0
 let origBoard
 const playerOne = { letter: "O", value: 1 }
 const playerTwo = { letter: "X", value: -1 }
+let playerCount = 0
 const winCombos = [
   [a, b, c],
   [d, e, f],
@@ -80,16 +81,23 @@ function startGame() {
 
 function turnClick(square) {
   // turn(square.target.id, playerOne)
-  if (
-    clickCount === 1 ||
-    clickCount === 3 ||
-    clickCount === 5 ||
-    clickCount === 7 ||
-    clickCount === 9
-  ) {
+  //   if (
+  //     clickCount === 1 ||
+  //     clickCount === 3 ||
+  //     clickCount === 5 ||
+  //     clickCount === 7 ||
+  //     clickCount === 9
+  //   ) {
+  //     turn(square.target.id, playerOne.letter)
+  //   } else {
+  //     turn(square.target.id, playerTwo.letter)
+  //   }
+  if (playerCount === 0) {
     turn(square.target.id, playerOne.letter)
+    playerCount = 1
   } else {
     turn(square.target.id, playerTwo.letter)
+    playerCount = 0
   }
 }
 
