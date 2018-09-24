@@ -64,6 +64,13 @@ const playerOneWinCondition = () => {
     document.querySelector(".winMessage").textContent = "PLAYER TWO WINS"
   }
 }
+
+let checkDraw = () => {
+	if (origBoard.a && origBoard.b && origBoard.c && origBoard.d && origBoard.e && origBoard.f && origBoard.g && origBoard.h && origBoard.j !== '') {
+	  document.querySelector('.winMessage').textContent = 'Draw. You both lose!'
+	}
+  }
+
 const cells = document.querySelectorAll(".cell")
 startGame()
 
@@ -103,6 +110,7 @@ function turnClick(square) {
 
 const checkWinner = () => {
   playerOneWinCondition()
+  checkDraw()
 }
 
 function turn(squareId, player) {
